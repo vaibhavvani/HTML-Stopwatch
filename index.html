@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="display" id="display">00:00:00.00</div>
+        <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
+            <button id="resumeBtn">Resume</button>
+            <button id="lapBtn">Lap</button>
+            <button id="resetBtn">Reset</button>
+            <button id="saveLapsBtn">Save Laps</button>
+            <button id="loadLapsBtn">Load Laps</button>
+            <button id="startCountdownBtn">Start Countdown</button>
+        </div>
+        <div class="input-container">
+            <input type="number" id="countdownInput" placeholder="Enter seconds">
+        </div>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode Off</button>
+        <div class="laps" id="laps"></div>
+        <footer> 
+            Made By- Vaibhav Verma 
+        </footer>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
